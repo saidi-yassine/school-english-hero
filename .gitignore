@@ -1,0 +1,5 @@
+.workbuddy-ai/
+__seed*.html
+__diag*.html
+.DS_Store
+Thumbs.db

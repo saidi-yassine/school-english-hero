@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>English Hero — Learn English from Zero to Hero</title>
+<meta name="description" content="English Hero is a structured English school that takes you from A1 beginner to C1 advanced through a clear, guided learning path." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%232563EB'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'%3EEH%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ============ APP SHELL ============ -->
+<div id="app-shell" class="app-shell hidden">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-mark">EH</div>
+      <div class="brand-text">
+        <strong>English Hero</strong>
+        <span>Zero to Hero</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <div class="nav-group-label">Main</div>
+      <a class="nav-item" data-route="#/dashboard" href="#/dashboard"><span class="ni-ico">◧</span><span>Dashboard</span></a>
+      <a class="nav-item" data-route="#/learn" href="#/learn"><span class="ni-ico">◈</span><span>Learn</span></a>
+      <div class="nav-group-label">Skills</div>
+      <a class="nav-item" data-route="#/vocabulary" href="#/vocabulary"><span class="ni-ico">◉</span><span>Vocabulary</span></a>
+      <a class="nav-item" data-route="#/grammar" href="#/grammar"><span class="ni-ico">◎</span><span>Grammar</span></a>
+      <a class="nav-item" data-route="#/listening" href="#/listening"><span class="ni-ico">◐</span><span>Listening</span></a>
+      <a class="nav-item" data-route="#/speaking" href="#/speaking"><span class="ni-ico">◍</span><span>Speaking</span></a>
+      <a class="nav-item" data-route="#/reading" href="#/reading"><span class="ni-ico">▤</span><span>Reading</span></a>
+      <a class="nav-item" data-route="#/writing" href="#/writing"><span class="ni-ico">✎</span><span>Writing</span></a>
+      <div class="nav-group-label">Practice</div>
+      <a class="nav-item" data-route="#/practice" href="#/practice"><span class="ni-ico">⚡</span><span>Practice</span></a>
+      <a class="nav-item" data-route="#/tests" href="#/tests"><span class="ni-ico">✪</span><span>Tests</span></a>
+      <a class="nav-item" data-route="#/progress" href="#/progress"><span class="ni-ico">▦</span><span>Progress</span></a>
+      <div class="nav-group-label">Account</div>
+      <a class="nav-item" data-route="#/profile" href="#/profile"><span class="ni-ico">☺</span><span>Profile</span></a>
+      <a class="nav-item" data-route="#/admin" href="#/admin" id="nav-admin"><span class="ni-ico">⚙</span><span>Admin</span></a>
+    </nav>
+
+    <div class="sidebar-foot">
+      <div class="sidebar-level-card" id="sidebar-level-card"></div>
+    </div>
+  </aside>
+  <div class="sidebar-scrim" id="sidebar-scrim"></div>
+
+  <!-- Main column -->
+  <div class="main-col">
+    <header class="topbar" id="topbar">
+      <button class="icon-btn burger" id="burger" aria-label="Menu">☰</button>
+      <div class="topbar-title" id="topbar-title">Dashboard</div>
+      <div class="topbar-spacer"></div>
+      <div class="topbar-stats" id="topbar-stats"></div>
+      <button class="icon-btn" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">◑</button>
+      <div class="avatar-btn" id="avatar-btn" title="Profile"></div>
+    </header>
+
+    <main class="view" id="view" tabindex="-1"></main>
+  </div>
+</div>
+
+<!-- ============ PUBLIC SHELL (landing / onboarding) ============ -->
+<div id="public-shell" class="public-shell hidden"></div>
+
+<!-- Toast + modal roots -->
+<div id="toast-root" class="toast-root"></div>
+<div id="modal-root" class="modal-root hidden"></div>
+
+<script src="js/data.js"></script>
+<script src="js/levels-1.js"></script>
+<script src="js/levels-2.js"></script>
+<script src="js/levels-3.js"></script>
+<script src="js/levels-4.js"></script>
+<script src="js/levels-5.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
